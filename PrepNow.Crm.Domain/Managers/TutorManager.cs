@@ -4,17 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PrepNow.Crm.DTO.Tutors;
-using PrepNow.Crm.Persistence;
+using StudyPoint.Crm.DTO.Tutors;
+using StudyPoint.Crm.Persistence.Repositories;
 
-namespace PrepNow.Crm.Domain.Tutors
+namespace StudyPoint.Crm.Domain.Managers
 {
-    class TutorManager
+    internal class TutorManager
     {
-        static Persistence.Repositories.TutorRepository _tutorRepository = new Persistence.Repositories.TutorRepository();
+        private readonly ITutorRepository _repository;
 
-        public static IEnumerable<Tutor> GetAllTutors()
+        public TutorManager(ITutorRepository argRepository)
         {
-            return _tutorRepository.Get();
+            _repository = argRepository;
+        }
+
+        public IEnumerable<Tutor> GetAllPrepNowTutors()
+        {
+            return _repository.GetAllPrepNowTutors();
+        }
+
+        public Tutor GetTutorById(int argTutorId)
+        {
+            Tutor tutor;
+            return _repository.TryGetTutorById(argTutorId, out tutor) ? tutor : null;
         }
     }
 }

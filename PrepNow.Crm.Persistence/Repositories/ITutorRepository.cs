@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PrepNow.TutorProfileService.Models;
+﻿using System.Collections.Generic;
+using PrepNow.Crm.DTO.Tutors;
+using StudyPoint.Crm.DTO.Tutors;
 
-namespace PrepNow.TutorProfileService.Repositories
+namespace StudyPoint.Crm.Persistence.Repositories
 {
-    interface ITutorRepository
+    public interface ITutorRepository
     {
-        IEnumerable<Tutor> Get();
-        bool TryGet(int id, out Tutor tutor);
+        IEnumerable<Tutor> GetAllPrepNowTutors();
+        bool TryGetTutorById(int argTutorId, out Tutor argTutor_out);
+        Tutor GetTutorById(int argTutorId);
         //Tutor Add(Tutor tutor);
         //bool Delete(int id);
         //bool Update(Tutor tutor);

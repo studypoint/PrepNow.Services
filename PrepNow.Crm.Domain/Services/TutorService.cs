@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using PrepNow.Crm.DTO.Tutors;
+using StudyPoint.Crm.Domain.Managers;
+using StudyPoint.Crm.DTO.Tutors;
+using StudyPoint.Crm.Persistence.Repositories;
 
-namespace PrepNow.Crm.Domain.Services
+namespace StudyPoint.Crm.Domain.Services
 {
-    class TutorService
+    public class TutorService
     {
+        private static TutorManager _tutorManager = new TutorManager(new TutorRepository());
+
+        public static IEnumerable<Tutor> GetAllPrepNowTutors()
+        {
+            return _tutorManager.GetAllPrepNowTutors();
+        }
+
+        public static Tutor GetTutorById(int argTutorId)
+        {
+            return _tutorManager.GetTutorById(argTutorId);
+        }
     }
 }
