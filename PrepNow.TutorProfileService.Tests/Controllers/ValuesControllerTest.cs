@@ -12,7 +12,7 @@ namespace PrepNow.TutorProfileService.Tests.Controllers
 {
     [TestClass]
     public class ValuesControllerTest
-    {
+    { 
         //[TestMethod]
         //public void Get()
         //{
