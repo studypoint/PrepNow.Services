@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using Insight.Database;
-using PrepNow.Crm.DTO.Tutors;
 using StudyPoint.Crm.DTO.Tutors;
 
 namespace StudyPoint.Crm.Persistence.Repositories

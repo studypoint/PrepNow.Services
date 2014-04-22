@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using PrepNow.Crm.DTO.Tutors;
 using StudyPoint.Crm.Domain.Managers;
 using StudyPoint.Crm.DTO.Tutors;
 using StudyPoint.Crm.Persistence.Repositories;

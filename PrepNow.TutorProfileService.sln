@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrepNow.TutorProfileService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrepNow.TutorProfileService.Tests", "PrepNow.TutorProfileService.Tests\PrepNow.TutorProfileService.Tests.csproj", "{E5C20B25-83DF-4F11-928F-CA0FF085AEF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyPoint.Crm.Domain", "PrepNow.Crm.Domain\StudyPoint.Crm.Domain.csproj", "{5ADFB96D-D72E-481F-A8FC-9F701ACAC185}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyPoint.Crm.Domain", "StudyPoint.Crm.Domain\StudyPoint.Crm.Domain.csproj", "{5ADFB96D-D72E-481F-A8FC-9F701ACAC185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyPoint.Crm.Persistence", "PrepNow.Crm.Persistence\StudyPoint.Crm.Persistence.csproj", "{109E21FD-04BC-48D4-AB13-D5B656E1131F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyPoint.Crm.Persistence", "StudyPoint.Crm.Persistence\StudyPoint.Crm.Persistence.csproj", "{109E21FD-04BC-48D4-AB13-D5B656E1131F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyPoint.Crm.DTO", "PrepNow.Crm.DTO\StudyPoint.Crm.DTO.csproj", "{8664F306-D7DF-4EBC-9F50-878DC78F742B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyPoint.Crm.DTO", "StudyPoint.Crm.DTO\StudyPoint.Crm.DTO.csproj", "{8664F306-D7DF-4EBC-9F50-878DC78F742B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
